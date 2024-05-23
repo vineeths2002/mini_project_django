@@ -1,0 +1,20 @@
+{% extends 'home.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+</head>
+<body>
+    <h1>LOGIN PAGE</h1><BR>
+    <form method="POST">
+        {% csrf_token %}
+        user name: <input type="text" name="u1"><br>
+        password :<input type="password" name="p1"><br>
+        <input type="submit" value="login">
+    </form>
+</body>
+</html>
+{% endblock %}
